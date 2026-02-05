@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://whats-app-backend-account-managemen.vercel.app/api';
 
 const api = axios.create({
-    baseURL: 'http://localhost:3000/api',
+    baseURL: 'https://whats-app-backend-account-managemen.vercel.app/api',
 });
 
 export const login = (credentials) => axios.post(`${API_URL}/auth/login`, credentials);
